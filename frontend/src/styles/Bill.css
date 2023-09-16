@@ -1,3 +1,32 @@
 .bill-container {
-    color: green;
+    width: 300px;
+    box-shadow: 0px 0px 12px -5px;
+    transition: 0.3s;
+    animation: ease-in-out;
 }
+
+.bill-container:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 12px -3.5px;
+}
+
+.bill-title {
+    font-weight: bold;
+}
+
+.bill-body {
+    color: green;
+    font-style: italic;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
