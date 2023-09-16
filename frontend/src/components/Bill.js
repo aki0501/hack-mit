@@ -1,21 +1,19 @@
 import "../styles/Bill.css"
 
-export default function Bill({title, body}) {
+export default function Bill({title, body, billUrl}) {
     return (
         <div className="bill-container">
-            <div className="bill-title">
-                {title}
+            <div className="bill-contents">
+                <div className="bill-title">
+                    {title}
+                </div>
+                <div className="bill-body">
+                    {body}
+                </div>
             </div>
-            <div className="bill-body">
-                {body}
-            </div>
-            <div className="button-container">
-                <button>
-                    <a href="google.com">
-                        Read more
-                    </a>
-                </button>
-            </div>
+            <button className="button-container" href={billUrl}>
+                Read more
+            </button>
         </div>
     )
 }

@@ -5,6 +5,7 @@ export default function Home() {
         <Bill
         title='Bill Title'
         body='A bunch of text text'
+        billUrl=''
         />
     )
 }
