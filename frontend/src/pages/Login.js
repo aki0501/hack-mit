@@ -20,7 +20,7 @@ function Login() {
         const response = await axios.post('http://localhost:3000/login', { username, password });
         alert(response.data.message);
 
-        window.location.href = "/bills";
+        window.location.href = "/home";
     } catch (error) {
         alert('Login failed' + error);
     }

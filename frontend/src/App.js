@@ -26,8 +26,11 @@ function App() {
     case "/treemail":
       Component = TreeMail
       break
+    case "/home":
+      Component = Home
+      break
     default:
-      Component = Login
+      Component = Home
   }
 
   return (
