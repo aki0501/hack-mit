@@ -23,10 +23,10 @@ function ElectedOfficials() {
 
     return (
         <html>
-            <head>
-                <title>Officials</title>
-            </head>
-            <body>
+        <div className="cover">
+            My Representatives
+        </div>
+            <body className="rep-list">
                 {politicianData.map((data, index) => (
                     <Politician
                         key={index}
