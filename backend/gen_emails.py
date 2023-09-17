@@ -2,7 +2,10 @@ import openai
 
 openai.api_key = "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"
 
+# should actually just be politician name.
 name = "Bill Nelson"
+
+# summary will just be the summary of the bill.
 summary = "NEPA declared a national policy to protect the environment and created the Council on Environmental Quality (CEQ) within the President's Executive Office. To implement the policy, NEPA requires that federal agencies consider the environmental impacts of any major federal action."
 
 prompt = "Write an email to your legislator" + name + ", showcasing your support for this bill description: " + summary
