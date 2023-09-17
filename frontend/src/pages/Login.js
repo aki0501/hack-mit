@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import "../styles/Login.css"
 
@@ -20,7 +19,7 @@ function Login() {
     try {
         const response = await axios.post('http://localhost:3000/login', { username, password });
         alert(response.data.message);
-        
+
         window.location.href = "/bills";
     } catch (error) {
         alert('Login failed' + error);
