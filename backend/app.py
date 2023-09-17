@@ -1,12 +1,15 @@
 from flask import Flask, jsonify
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 import requests
 
 app = Flask(__name__)
 
-CORS(app)
+cors = CORS(app, resources={"/*": {"origins": "http://localhost:3000"}})
+# CORS(app)
+
 
 @app.route('/bills')
+@cross_origin()
 def get_bills():
     url = "https://api.propublica.org/congress/v1/bills/search.json?query=environment"
     headers = {
@@ -17,4 +20,4 @@ def get_bills():
     return response.json()
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(port=3000)

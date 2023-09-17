@@ -8,7 +8,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/bills');
+        const response = await axios.get('http://localhost:3000/bills');
         const bills = response["data"]["results"][0]["bills"];
         setBillData(bills);
       } catch (error) {
