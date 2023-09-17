@@ -46,10 +46,10 @@ function ElectedOfficials() {
 
     return (
         <html>
-            <head>
-                <title>Officials</title>
-            </head>
-            <body>
+        <div className="cover">
+            My Representatives
+        </div>
+            <div className="rep-list">
                 {politicianData.map((data, index) => (
                     <Politician
                         key={index}
@@ -62,7 +62,7 @@ function ElectedOfficials() {
                     />
                 ))}
                 <button onClick={handleClick}>Click me</button>
-            </body>
+            </div>
         </html>
     );
 }
