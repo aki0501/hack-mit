@@ -10,10 +10,12 @@ export default function Bill({title, body, billUrl}) {
                 <div className="bill-body">
                     {body}
                 </div>
+                <div>
+                    <button className="button-container" href={billUrl}>
+                        Read more
+                    </button>
+                </div>
             </div>
-            <button className="button-container" href={billUrl}>
-                Read more
-            </button>
         </div>
     )
 }
