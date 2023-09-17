@@ -5,7 +5,7 @@ import Login from "./pages/Login"
 import Signup from "./pages/Signup"
 import ElectedOfficials from "./pages/ElectedOfficials"
 import "./styles/App.css"
-
+import background from "./icons/forest3.jpeg"
 
 function App() {
   let Component
@@ -30,10 +30,10 @@ function App() {
   }
 
   return (
-    <>
+    <div style={{ backgroundImage: `url(${background})` }}>
       <Navbar />
       <Component />
-    </>
+    </div>
   );
 }
 

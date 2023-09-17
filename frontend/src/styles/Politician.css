@@ -1,6 +1,6 @@
 .rep-container {
-    width: 50%;
-    box-shadow: 0px 0px 8px -5px;
+    /* width: 50%; */
+    box-shadow: 0px 0px 30px -5px;
     transition: 0.3s;
     animation: ease-in-out;
     border-radius: 17px;
@@ -10,7 +10,7 @@
 
 .rep-container:hover {
     transform: scale(1.01);
-    box-shadow: 0px 0px 10px -3.5px;
+    box-shadow: 0px 0px 35px -3.5px;
 }
 
 .rep-name {

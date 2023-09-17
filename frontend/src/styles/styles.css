@@ -28,7 +28,8 @@
 }
 
 .nav a {
-    color: black;
+    color: white;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -47,4 +48,5 @@
     font-size: 3rem;
     margin-top: 6rem;
     margin-bottom: 5rem;
+    color: white;
 }
