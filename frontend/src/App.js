@@ -12,7 +12,7 @@ function App() {
   let Component
   switch (window.location.pathname) {
     case "/":
-      Component = Home
+      Component = Login
       break
     case "/ElectedOfficials":
       Component = ElectedOfficials
@@ -20,23 +20,25 @@ function App() {
     case "/Profile":
       Component = Profile
       break
-    case "/login":
-      Component = Login
-      break
     case "/signup":
       Component = Signup
       break
     case "/treemail":
       Component = TreeMail
       break
+    case "/home":
+      Component = Home
+      break
     default:
       Component = Home
   }
 
   return (
-    <div style={{ backgroundImage: `url(${background})` }}>
+    <div>
       <Navbar />
-      <Component />
+      <div className="component-container">
+        <Component />
+      </div>
     </div>
   );
 }
