@@ -34,9 +34,11 @@ function App() {
   }
 
   return (
-    <div style={{ backgroundImage: `url(${background})` }}>
+    <div>
       <Navbar />
-      <Component />
+      <div className="component-container">
+        <Component />
+      </div>
     </div>
   );
 }
