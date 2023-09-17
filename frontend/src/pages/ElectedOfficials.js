@@ -1,6 +1,11 @@
-import Politician from "../components/Politician"
+import React, { useState, useEffect } from 'react';
+import Politician from '../components/Politician';
+import axios from 'axios';
 
 function ElectedOfficials() {
+    const [ttt, setTtt] = useState("ooo");
+    const [t, setT] = useState("p");
+    var [repsData, setRepsData] = useState([]); // Initialize repsData as an empty array
 
     const politicianData = [
         {
@@ -21,12 +26,30 @@ function ElectedOfficials() {
         }
     ];
 
+    useEffect(() => {
+        // Fetch data from the API when the component mounts
+        axios.get('/get_reps')
+            .then(response => {
+                console.log(response.data);
+                // Set the repsData state with the fetched data
+                setRepsData(response.data);
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+    }, []); // The empty dependency array ensures this effect runs once on component mount
+
+    function handleClick() {
+        // Now you can use the fetched repsData to update t
+        setT(JSON.stringify(repsData));
+    }
+
     return (
         <html>
-        <div className="cover">
-            My Representatives
-        </div>
-            <body className="rep-list">
+            <head>
+                <title>Officials</title>
+            </head>
+            <body>
                 {politicianData.map((data, index) => (
                     <Politician
                         key={index}
@@ -38,9 +61,10 @@ function ElectedOfficials() {
                         photoLink={data.photoLink}
                     />
                 ))}
-            </body>
-        </html>
-    )
+                <button onClick={handleClick}>Click me</button>
+            </>
+        </div>
+    );
 }
 
 export default ElectedOfficials;

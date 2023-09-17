@@ -90,6 +90,21 @@ def login():
     return jsonify({'message': 'Login successful'})
  
 
+
+@app.route('/get_reps', methods=['GET'])
+@cross_origin()
+def get_reps():
+    url = "https://www.googleapis.com/civicinfo/v2/representatives"
+    params = {
+        "address": "02493",
+        "key": "AIzaSyCHDWA-agR-vvAqBkSNs5gvLQ_ZoLLCkSY",
+    }
+    rep_response = requests.get(url=url, headers=params)
+    data = rep_response.json()
+    print(data)
+    return jsonify(data)
+
+
 if __name__ == '__main__':
     with app.app_context(): # you need this bc you're running the db in the same file it was declared?
         db.create_all()
