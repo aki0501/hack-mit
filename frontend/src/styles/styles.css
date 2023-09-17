@@ -4,19 +4,20 @@
 }
 
 .site-title {
-    margin-top: 1rem;
-    margin-left: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2.5rem;
     font-size: 2rem;
     text-decoration: none;
 }
 
 .nav {
-    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
     padding: 0 1rem;
+    background-color: white;
 }
 
 .nav ul {
@@ -25,10 +26,11 @@
     list-style: none;
     display: flex;
     gap: 1rem;
+    margin-right: 2rem;
 }
 
 .nav a {
-    color: white;
+    color: rgb(80, 150, 80);
     font-weight: bold;
     text-decoration: none;
 }
