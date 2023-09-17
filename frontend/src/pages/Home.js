@@ -10,8 +10,10 @@ export default function Home() {
     const fetchData = async () => {
       try {
         const response = await axios.get('http://localhost:3000/bills');
-        const bills = response["data"]["results"][0]["bills"];
-        setBillData(bills);
+        if ("data" in response) {
+            const bills = response["data"]["results"][0]["bills"];
+            setBillData(bills);
+        }
       } catch (error) {
         console.error("There was an error fetching data", error);
       }
@@ -30,9 +32,9 @@ export default function Home() {
             billData.map((bill, index) => (
             <Bill
                 key={index}
-                title={bill.short_title}
-                body={bill.title}
-                billUrl={bill.billUrl}
+                title={bill.short_title || "No Title"}
+                body={bill.title || "No Body"}
+                billUrl={bill.govtrack_url || "#"}
             />
             ))
         ) : (

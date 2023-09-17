@@ -11,7 +11,7 @@ export default function Bill({title, body, billUrl}) {
                     {body}
                 </div>
                 <div>
-                    <button className="button-container" href={billUrl}>
+                <button className="button-container" onClick={() => window.location.href= billUrl}>
                         Read more
                     </button>
                 </div>
