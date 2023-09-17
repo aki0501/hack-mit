@@ -14,7 +14,8 @@ Open up another terminal and run:
 ```
 cd backend
 pip install flask
-pip install -U flask-cors
+pip install flask-cors
+pip install flask-sqlalchemy
 python3 app.py
 ```
 
