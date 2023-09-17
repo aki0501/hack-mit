@@ -1,6 +1,7 @@
 import Navbar from "./Navigation"
 import Home from "./pages/Home"
 import Profile from "./pages/Profile"
+import ElectedOfficials from "./pages/ElectedOfficials"
 import "./styles/App.css"
 
 
@@ -10,9 +11,14 @@ function App() {
     case "/":
       Component = Home
       break
+    case "/ElectedOfficials":
+      Component = ElectedOfficials
+      break
     case "/Profile":
       Component = Profile
       break
+    default:
+      Component = Home
   }
 
   return (
