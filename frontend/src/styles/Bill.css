@@ -1,38 +1,45 @@
 
 .bill-container {
-    width: 300px;
-    box-shadow: 0px 0px 12px -5px;
+    width: 90%;
+    box-shadow: 0px 0px 8px -5px;
     transition: 0.3s;
     animation: ease-in-out;
+    border-radius: 17px;
+    position: relative;
+    margin-top: 2rem;
 }
 
 .bill-container:hover {
     transform: scale(1.01);
-    box-shadow: 0px 0px 12px -3.5px;
+    box-shadow: 0px 0px 10px -3.5px;
 }
 
 .bill-title {
     font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .bill-body {
-    color: green;
+    color: rgb(94, 93, 93);
     font-style: italic;
+    margin-bottom: 1rem;
 }
 
 .button-container {
-    background-color: #4CAF50; /* Green */
+    background-color: rgb(50, 139, 255); /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 12px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
+    margin-top: 1rem;
 }
 
 .button-container:hover {
-    background-color: purple;
+    background-color: rgb(174, 174, 174);
+    color: rgb(55, 55, 55);
 }
 
 .bill-contents {

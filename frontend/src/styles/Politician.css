@@ -1,0 +1,46 @@
+.rep-container {
+    width: 470px;
+    box-shadow: 0px 0px 12px -5px;
+    transition: 0.3s;
+    animation: ease-in-out;
+    left: 10px;
+}
+
+.rep-container:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 12px -3.5px;
+}
+
+.rep-name {
+    font-weight: bold;
+    color: black;
+    font-style: normal;
+    font-size: 21px;
+}
+
+.rep-contents {
+    margin: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.rep-contents {
+    display: flex;
+    /* Use flexbox to arrange elements */
+    align-items: flex-start;
+    /* Align elements to the top */
+}
+
+.rep-photo {
+    margin-right: 20px;
+    /* Add margin to separate the photo from text */
+}
+
+/* Style for the text elements */
+.rep-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: green;
+    font-style: italic;
+    /* Stack text elements vertically */
+}
