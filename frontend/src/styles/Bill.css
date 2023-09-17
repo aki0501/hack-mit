@@ -1,3 +1,4 @@
+
 .bill-container {
     width: 300px;
     box-shadow: 0px 0px 12px -5px;
@@ -19,7 +20,7 @@
     font-style: italic;
 }
 
-.button {
+.button-container {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -30,3 +31,11 @@
     font-size: 16px;
 }
 
+.button-container:hover {
+    background-color: purple;
+}
+
+.bill-contents {
+    margin: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+}

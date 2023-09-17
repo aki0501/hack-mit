@@ -25,8 +25,9 @@ export default function Home() {
         billData.map((bill, index) => (
           <Bill
             key={index}
-            title={bill.title}
-            body='A bunch of text text'
+            title={bill.short_title}
+            body={bill.title}
+            billUrl={bill.billUrl}
           />
         ))
       ) : (
