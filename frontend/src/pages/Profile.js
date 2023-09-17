@@ -1,7 +1,7 @@
-export default function Profile({username}) {
+export default function Profile() {
     return (
         <div className="cover">
-            Hi {username}! 
+            Hi!
         </div>
     )
 }
