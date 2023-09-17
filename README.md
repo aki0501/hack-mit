@@ -5,6 +5,7 @@ Instructions for running:
 git clone git@github.com:aki0501/hack-mit.git
 cd frontend
 npm i
+npm install bootstrap
 npm start
 
 ```
@@ -12,8 +13,9 @@ npm start
 Open up another terminal and run:
 ```
 cd backend
-npm i
-npm start
+pip install flask
+pip install -U flask-cors
+python3 app.py
 ```
 
 
