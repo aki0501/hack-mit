@@ -1,9 +1,11 @@
 import "./styles/styles.css"
+import treeImg from './images/tree.svg';
+
 
 export default function Navbar() {
     return (
     <nav className="nav">
-        <a href="/" className="site-title">Site Name</a>
+        <img onClick={() => window.location.href="/"} className="site-title" src={treeImg} />
         <ul>
             <li>
                 <a href="/ElectedOfficials">Elected Officials</a>
