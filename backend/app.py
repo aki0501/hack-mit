@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request
-from flask_cors import cross_origin
+from flask_cors import CORS, cross_origin
 import requests
+import openai
 
 from flask_sqlalchemy import SQLAlchemy
 # import jwt
@@ -17,6 +18,8 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydatabase.db'
 app.config['SECRET_KEY'] = secrets.token_hex(32)   # Replace with a strong, random secret key
 db = SQLAlchemy(app)
+
+CORS(app)
 
 # Define the User model (assuming you already have this defined)
 class User(db.Model):
@@ -94,15 +97,34 @@ def login():
 @app.route('/get_reps', methods=['GET'])
 @cross_origin()
 def get_reps():
-    url = "https://www.googleapis.com/civicinfo/v2/representatives"
-    params = {
-        "address": "02493",
-        "key": "AIzaSyCHDWA-agR-vvAqBkSNs5gvLQ_ZoLLCkSY",
-    }
-    rep_response = requests.get(url=url, headers=params)
+    url = "https://www.googleapis.com/civicinfo/v2/representatives/?key=AIzaSyCHDWA-agR-vvAqBkSNs5gvLQ_ZoLLCkSY&address=02493"
+    rep_response = requests.get(url=url)
     data = rep_response.json()
     print(data)
     return jsonify(data)
+
+@app.route('/treemail')
+@cross_origin()
+def get_tree_mail():
+    openai.api_key = "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"
+    # should actually just be politician name.
+    name = "Bill Nelson"
+
+    # summary will just be the summary of the bill.
+    summary = "To amend the Federal Insecticide, Fungicide, and Rodenticide Act to fully protect the safety of children and the environment, to remove dangerous pesticides from use, and for other purposes."
+
+    prompt = "Write an email to your legislator" + name + ", showcasing your support for this bill description: " + summary
+
+
+    completion = openai.ChatCompletion.create(model = "gpt-3.5-turbo",
+                                          messages = [{
+                                                "role": "user",
+                                                "content": prompt
+                                          }])
+
+    email_content = completion.choices[0].message.content
+
+    return(email_content)
 
 
 if __name__ == '__main__':

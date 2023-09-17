@@ -16,6 +16,7 @@ cd backend
 pip install flask
 pip install flask-cors
 pip install flask-sqlalchemy
+pip install openai
 python3 app.py
 ```
 

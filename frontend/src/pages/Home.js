@@ -20,7 +20,7 @@ export default function Home() {
     };
 
     fetchData();
-  }, []); // The empty array means this useEffect runs once when the component mounts
+  }, []); 
 
   return (
     <div>

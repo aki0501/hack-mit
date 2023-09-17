@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 # should actually just be politician name.
 name = "Bill Nelson"
