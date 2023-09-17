@@ -6,6 +6,7 @@ import Signup from "./pages/Signup"
 import ElectedOfficials from "./pages/ElectedOfficials"
 import "./styles/App.css"
 import background from "./icons/forest3.jpeg"
+import TreeMail from "./pages/TreeMail"
 
 function App() {
   let Component
@@ -24,6 +25,9 @@ function App() {
       break
     case "/signup":
       Component = Signup
+      break
+    case "/treemail":
+      Component = TreeMail
       break
     default:
       Component = Home
