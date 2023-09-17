@@ -20,9 +20,6 @@ function App() {
     case "/Profile":
       Component = Profile
       break
-    case "/login":
-      Component = Login
-      break
     case "/signup":
       Component = Signup
       break

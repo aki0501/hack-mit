@@ -16,19 +16,11 @@ function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-<<<<<<< HEAD
-  // let navigate = useNavigate();
-=======
-  // let navigate = useNavigate();
->>>>>>> 3f841a3 (Style signup page)
   const handleLogin = async () => {
     try {
         const response = await axios.post('http://localhost:3000/login', { username, password });
         alert(response.data.message);
-
-        // navigate to new page:
-        // let path = `/Home`;
-        // navigate(path);
+        
         window.location.href = "/bills";
     } catch (error) {
         alert('Login failed' + error);
