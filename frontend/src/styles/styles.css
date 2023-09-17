@@ -4,11 +4,12 @@
 }
 
 .site-title {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
     margin-left: 2.5rem;
     font-size: 2rem;
     text-decoration: none;
+    height: 2.5rem;
 }
 
 .nav {
