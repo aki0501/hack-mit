@@ -6,6 +6,7 @@ git clone git@github.com:aki0501/hack-mit.git
 cd frontend
 npm i
 npm install bootstrap
+npm i mdb-react-ui-kit
 npm start
 
 ```

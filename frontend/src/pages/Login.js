@@ -16,14 +16,18 @@ function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  // let navigate = useNavigate(); 
+<<<<<<< HEAD
+  // let navigate = useNavigate();
+=======
+  // let navigate = useNavigate();
+>>>>>>> 3f841a3 (Style signup page)
   const handleLogin = async () => {
     try {
         const response = await axios.post('http://localhost:3000/login', { username, password });
         alert(response.data.message);
-        
+
         // navigate to new page:
-        // let path = `/Home`; 
+        // let path = `/Home`;
         // navigate(path);
         window.location.href = "/bills";
     } catch (error) {
@@ -40,17 +44,12 @@ function Login() {
           <div className="d-flex flex-column ms-5">
 
             <div className="text-center">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
-                style={{width: '185px'}} alt="logo" />
-              <h4 className="mt-1 mb-5 pb-1">Welcome to Treemail</h4>
+              <h4 className="cover">Welcome</h4>
             </div>
 
-            <p>Please login to your account</p>
-
-
-            <MDBInput wrapperClass='mb-4' label='Username' id='form1' 
+            <MDBInput wrapperClass='mb-4' label='Username' id='form1'
                       type='username' value={username} onChange={(e) => setUsername(e.target.value)} />
-            <MDBInput wrapperClass='mb-4' label='Password' id='form2' 
+            <MDBInput wrapperClass='mb-4' label='Password' id='form2'
                       type='password' value={password} onChange={(e) => setPassword(e.target.value)}/>
 
 
@@ -95,7 +94,7 @@ function Login() {
     //     placeholder="Username"
     //     value={username}
     //     onChange={(e) => setUsername(e.target.value)}
-    //   
+    //
     //   <input
     //     type="password"
     //     placeholder="Password"

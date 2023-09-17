@@ -12,7 +12,7 @@ function App() {
   let Component
   switch (window.location.pathname) {
     case "/":
-      Component = Home
+      Component = Login
       break
     case "/ElectedOfficials":
       Component = ElectedOfficials
@@ -30,7 +30,7 @@ function App() {
       Component = TreeMail
       break
     default:
-      Component = Home
+      Component = Login
   }
 
   return (
