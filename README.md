@@ -1,6 +1,8 @@
 # TreeMail
 Connecting sustainability-passionate constituents to relevant bills and drafting emails for them using OpenAI API.
 
+![](./src/images/tree.svg)
+
 ## Inspiration
 80% of Americans think that we need to do more to address environmental issues, yet only **one third** 
 of Americans know who their representatives are! One of the most overlooked methods of environmental activism is pressuring elected officials to pass environmentally-friendly legislation. Our mission: to facilitate communication between constituents and their elected officials and to encourage civic engagement surrounding environmental issues.
