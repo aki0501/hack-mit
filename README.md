@@ -21,7 +21,7 @@ We hope to implement several features in the future to optimize the user experie
  - Expanding to more issues than sustainability!
 
 
-## Instructions for running:
+### Instructions for running:
 ```
 git clone git@github.com:aki0501/hack-mit.git
 cd frontend
@@ -32,7 +32,7 @@ npm start
 
 ```
 
-## On another terminal, run:
+### On another terminal, run:
 ```
 cd backend
 pip install flask
