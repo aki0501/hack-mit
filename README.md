@@ -1,3 +1,5 @@
+<p align="center"> <img width="500" alt="Screen Shot 2023-09-26 at 3 58 06 AM" src="https://github.com/aki0501/hack-mit/assets/71607240/914636d4-95c6-4ad2-a88e-17684c279526" align="center"> </p>
+
 # TreeMail
 Connecting sustainability-passionate constituents to relevant bills and drafting emails for them using OpenAI API.
 
