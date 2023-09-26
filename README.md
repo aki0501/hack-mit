@@ -21,7 +21,7 @@ We hope to implement several features in the future to optimize the user experie
  - Expanding to more issues than sustainability!
 
 
-### Instructions for running:
+## Instructions for running:
 ```
 git clone git@github.com:aki0501/hack-mit.git
 cd frontend
@@ -31,6 +31,8 @@ npm i mdb-react-ui-kit
 npm start
 
 ```
+
+Now, run the application in your browser using the network address (NOT your local address!). The backend will be run on your local address, so there will only be a UI on the network address.
 
 ### On another terminal, run:
 ```
