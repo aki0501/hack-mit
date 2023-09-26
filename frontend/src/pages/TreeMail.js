@@ -23,7 +23,8 @@ export default function TreeMail() {
     
     return (
         <div className="cover">
-            {treeMail}
+             {treeMail.length > 0 ? 
+            treeMail : "Loading..."}
         </div>
     )
 }

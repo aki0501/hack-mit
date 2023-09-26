@@ -108,7 +108,7 @@ def get_reps():
 def get_tree_mail():
     openai.api_key = "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"
     # should actually just be politician name.
-    name = "Bill Nelson"
+    name = "Elizabeth Warren"
 
     # summary will just be the summary of the bill.
     summary = "To amend the Federal Insecticide, Fungicide, and Rodenticide Act to fully protect the safety of children and the environment, to remove dangerous pesticides from use, and for other purposes."

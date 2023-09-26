@@ -26,6 +26,14 @@ function Login() {
     }
   };
 
+  const handleRegister = async () => {
+    try {
+        window.location.href = "/signup";
+    } catch (error) {
+        alert('Signup failed' + error);
+    }
+  };
+
   return (
     <MDBContainer className="my-5 gradient-form">
 
@@ -45,14 +53,15 @@ function Login() {
                         type='password' value={password} onChange={(e) => setPassword(e.target.value)}/>
             </div>
 
+
             <div className="text-center pt-1 mb-5 pb-1">
               <MDBBtn className="mb-4 w-100 gradient-custom-2 " onClick={handleLogin}>Sign in</MDBBtn>
               <a className="texty-text" href="#!">Forgot password?</a>
             </div>
 
             <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-4">
-              <p className="texty-text">Don't have an account?</p>
-              <MDBBtn className='register-button'>
+            <p className="texty-text">Don't have an account?</p>
+              <MDBBtn outline className='mx-2' color='danger' onClick={handleRegister}>
                 Register!
               </MDBBtn>
             </div>
