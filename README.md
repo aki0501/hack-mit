@@ -32,8 +32,6 @@ npm start
 
 ```
 
-Now, run the application in your browser using the network address (NOT your local address!). The backend will be run on your local address, so there will only be a UI on the network address.
-
 ### On another terminal, run:
 ```
 cd backend
@@ -44,4 +42,8 @@ pip install openai
 python3 app.py
 ```
 
+Now, go back to the first terminal (frontend) and run the application in your browser using the network address (NOT the local address!). The backend will be run on your local address, so there will only be a UI on the network address.
 
+### Notes on running:
+
+You will need to provide your own OpenAI API token to access the Treemail generation feature in development. The other API tokens are provided, but we recommend you generate your own as well.
