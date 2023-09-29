@@ -1,5 +1,8 @@
 <p align="center"> <img alt="Screen Shot 2023-09-26 at 3 58 06 AM" src="https://github.com/aki0501/hack-mit/assets/71607240/8b4063f6-98e6-412b-87f2-1f089607172b" align="center"> </p>
 
+<h3 align="center" style=> <b>Aki Hasegawa-Johnson | Ben Xu | Debbie Lilly | Henry Chen</b> </h3>
+<p align="center"> <b>HackMIT 2023</b> </p>
+
 # TreeMail
 Connecting sustainability-passionate constituents to relevant bills and drafting emails for them using OpenAI API.
 
